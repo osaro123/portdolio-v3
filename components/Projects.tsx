@@ -22,7 +22,7 @@ const works = [
 const Projects = () => {
     const phrase = "Frustrated with websites that don't reflect your brand or drive growth? I craft premium web experiences that captivate and help you focus on growing your business."
     const container = useRef(null)
-    const isInView = useInView(container)
+    //const isInView = useInView(container)
   return (
     <div className='py-[72px] px-4 font-generalSans'>
         <h1 className='font-semibold text-7xl relative'>SELECTED WORKS/<span className='absolute top-0 text-5xl'>(3)</span></h1>

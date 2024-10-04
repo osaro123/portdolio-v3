@@ -9,13 +9,13 @@ type LinkProp = {
 }
 
 const Navbar = () => {
-    const [isActive,setIsActive] = useState(false)
+    //const [isActive,setIsActive] = useState(false)
   return (
     <motion.nav className='flex justify-between items-center py-2' variants={dropDown} initial="initial" animate="animate">
         <div className='flex gap-[20rem]'>
             <div>
                 <h3 className='font-semibold'>Osaro Lawani</h3>
-                <p>Available - September '24</p>
+                <p>Available - September {"'"}24</p>
             </div>
             <p className='opacity-80'>Frontend Developer <br /> Folio / 2024 - Present</p>
         </div>
