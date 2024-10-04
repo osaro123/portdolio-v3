@@ -1,4 +1,4 @@
-import { useInView } from 'framer-motion'
+// import { useInView } from 'framer-motion'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React, { useRef } from 'react'
@@ -21,7 +21,7 @@ const works = [
 
 const Projects = () => {
     const phrase = "Frustrated with websites that don't reflect your brand or drive growth? I craft premium web experiences that captivate and help you focus on growing your business."
-    const container = useRef(null)
+    //const container = useRef(null)
     //const isInView = useInView(container)
   return (
     <div className='py-[72px] px-4 font-generalSans'>
