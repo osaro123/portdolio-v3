@@ -1,4 +1,6 @@
 "use client"
+import Cta from '@/components/Cta'
+import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
 import Preloader from '@/components/Preloader'
 import Projects from '@/components/Projects'
@@ -31,6 +33,8 @@ const Home = () => {
       <AnimatePresence mode='wait'>
         {isLoading && <Preloader/> }
       </AnimatePresence>
+      <Cta/>
+      <Footer/>
     </div>
   )
 }
