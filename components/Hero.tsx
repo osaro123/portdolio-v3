@@ -24,7 +24,7 @@ const Hero = () => {
                     ))}
                 </p>
                 <div className='flex justify-between items-center'>
-                    <p>Scroll down</p>
+                    <p>[ Scroll to explore ]</p>
                     <motion.div
                         animate={{ y: [0, 10, 0] }} // Moves the arrow down and back up
                         transition={{

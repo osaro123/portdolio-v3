@@ -30,7 +30,7 @@ const Projects = () => {
             <div className='grid grid-cols-2'>
                 <div></div>
                 <div className='flex gap-8 max-w-[600px] py-8'>
-                    <h3 className='opacity-80'>(Projects)</h3>
+                    <h3 className='opacity-80'>[Projects]</h3>
                     <p className='text-2xl'>
                         {phrase.split(" ").map((word,i) => (
                             <span key={i} className='inline-block overflow-hidden'>

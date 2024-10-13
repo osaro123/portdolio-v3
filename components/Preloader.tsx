@@ -38,13 +38,6 @@ const Preloader = () => {
 
   return (
     <motion.div variants={slideUp} initial="initial" exit={"exit"} className='flex justify-center items-center h-screen w-full bg-[#111] text-white fixed top-0 left-0 z-[99] font-generalSans'>
-        <h1 className='text-3xl font-semibold'>
-            {preloaderText.split(" ").map((word,i) => (
-                <span key={i} className='inline-block overflow-hidden'>
-                    <motion.span variants={heroText} initial="initial" animate="animate" custom={i} className='inline-block'>{word + "\u00A0"}</motion.span>
-                </span>
-            ))}
-        </h1>
         {
             dimension.height > 0 && <>
                 <svg>
@@ -52,6 +45,13 @@ const Preloader = () => {
                 </svg>
             </>
         }
+        <h1 className='text-4xl font-semibold'>
+            {preloaderText.split(" ").map((word,i) => (
+                <span key={i} className='inline-block overflow-hidden'>
+                    <motion.span variants={heroText} initial="initial" animate="animate" custom={i} className='inline-block'>{word + "\u00A0"}</motion.span>
+                </span>
+            ))}
+        </h1>
     </motion.div>
   )
 }

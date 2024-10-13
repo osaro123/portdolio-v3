@@ -5,7 +5,8 @@ import { dropDown } from './anim'
 
 type LinkProp = {
     href: string,
-    children: ReactNode
+    children: ReactNode,
+    color: string
 }
 
 const Navbar = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
             <p className='opacity-80'>Frontend Developer <br /> Folio / 2024 - Present</p>
         </div>
         <div className='py-1 px-3 rounded-full border-[1px] border-black cursor-pointer'>
-            <FlipLink href=''>Menu</FlipLink>
+            <FlipLink href='' color="#111">Menu</FlipLink>
         </div>
     </motion.nav>
   )
@@ -29,13 +30,13 @@ const Navbar = () => {
 export default Navbar
 
 
-const FlipLink = ({href ,children}: LinkProp) => {
+export const FlipLink = ({href ,children,color}: LinkProp) => {
     return (
         <motion.a 
             href={href}
             initial="initial"
             whileHover="hovered"
-            className='relative block overflow-hidden whitespace-nowrap cursor-pointer text-[#111]'
+            className={`relative block overflow-hidden whitespace-nowrap cursor-pointer text-[${color}]`}
         >
             <motion.div
                 variants={{
