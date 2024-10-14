@@ -24,6 +24,7 @@ const Footer = () => {
                     <FlipLink href='https://x.com/osaro_lawani' color='#e2e2e2'>Twitter</FlipLink>
                     <FlipLink href='https://www.instagram.com/bolajiszn/' color='#e2e2e2'>Instagram</FlipLink>
                     <FlipLink href='https://www.linkedin.com/in/osaro-lawani-59958b251/' color='#e2e2e2'>LinkedIn</FlipLink>
+                    <FlipLink href='https://github.com/osaro123/' color='#e2e2e2'>Github</FlipLink>
                   </ul>
                 </div>
               </div>

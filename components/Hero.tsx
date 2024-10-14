@@ -34,7 +34,7 @@ const Hero = () => {
                             ease: "easeInOut"
                         }}
                     >
-                        <ArrowDown size={18} />
+                        <ArrowDown size={18}/>
                     </motion.div>
                 </div>
             </div>
