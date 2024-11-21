@@ -1,4 +1,5 @@
 "use client"
+import About from '@/components/About'
 import Cta from '@/components/Cta'
 import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
@@ -29,11 +30,12 @@ const Home = () => {
 
   return (
     <div className=''>
-      <Hero/>
-      <Projects/>
       <AnimatePresence mode='wait'>
         {isLoading && <Preloader/> }
       </AnimatePresence>
+      <Hero/>
+      <Projects/>
+      <About/>
       <Cta/>
       <Footer/>
     </div>

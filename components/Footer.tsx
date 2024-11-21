@@ -28,7 +28,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <h3 className='text-[12rem] text-[#e2e2e2] opacity-60 font-semibold tracking-tighter text-center w-full absolute bottom-0'>OSARO LAWANI</h3>
+              <h3 className='text-[13rem] text-[#e2e2e2] opacity-60 font-semibold tracking-tighter text-center w-full absolute bottom-0'>OSARO LAWANI</h3>
           </div>
         </div>
     </div>

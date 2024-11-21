@@ -1,20 +1,19 @@
 // import { useInView } from 'framer-motion'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
+import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
 import { heroText } from './anim'
 
 const works = [
     {
         title: "BudgetMate",
-        description: "",
+        description: "Tech & Finance",
     },
     {
         title: "TripTrove",
-        description: "",
+        description: "Tech & Travel",
     },
     {
         title: "Dropit",
-        description: "",
+        description: "Tech & Engineering",
     },
 ]
 
@@ -22,6 +21,8 @@ const Projects = () => {
     const phrase = "Frustrated with websites that don't reflect your brand or drive growth? I craft premium web experiences that captivate and help you focus on growing your business."
     //const container = useRef(null)
     //const isInView = useInView(container)
+    let num = 1
+
   return (
     <div className='py-[72px] px-4 font-generalSans'>
         <h1 className='font-semibold text-7xl relative'>SELECTED WORKS/<span className='absolute top-0 text-5xl'>(3)</span></h1>
@@ -42,14 +43,17 @@ const Projects = () => {
             </div>
             {works.map(({title,description},i) => (
                 <div key={i} className='grid grid-cols-2'>
-                    <h3 className='sticky h-fit top-0 text-9xl'>{`0${i+1}.`}</h3>
+                    <h3 className='sticky h-fit top-0 text-[11rem] leading-none'>{`0${i + 1}.`}</h3>
                     <div>
                         <div className='bg-[#e2e2e2] rounded-md h-[700px]'>
-                            <Image src={""} alt={description}/>
+                        {/* <video width="800" height="1200" controls autoPlay loop muted>
+                            <source src="../public/assets/dropit.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video> */}
                         </div>
                         <div className='pt-4 pb-16'>
                             <p className='pb-1 opacity-60 text-[#111]'>
-                                {"Tech & Engineering".split(" ").map((word,i) => (
+                                {description.split(" ").map((word,i) => (
                                     <span key={i} className=''>
                                         <motion.span variants={heroText} initial="initial" whileInView="animate" custom={i} className='inline-block'>{word + "\u00A0"}</motion.span>
                                     </span>

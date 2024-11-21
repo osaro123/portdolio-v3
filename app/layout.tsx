@@ -6,12 +6,12 @@ import "./globals.css";
 const generalSans = localFont({
   src: [
     {
-      path: "./fonts/GeneralSans/GeneralSans-Regular.woff2",
+      path: "./fonts/Satoshi/Satoshi-Medium.woff2",
       weight: "400",
       style: "regular"
     },
     {
-      path: "./fonts/GeneralSans/GeneralSans-Semibold.woff2",
+      path: "./fonts/CabinetGrotesk/CabinetGrotesk-Extrabold.woff2",
       weight: "600",
       style: "semibold"
     }
